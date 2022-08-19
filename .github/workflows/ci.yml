@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 name: CI2 
+=======
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+name: CI
 env:
   SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
   SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
@@ -46,4 +51,8 @@ jobs:
     - name: Run visual tests 👁
       run: |
         cd my-app
+<<<<<<< HEAD
         npm run test:visual
+=======
+        npm run test:visual
+>>>>>>> 05fde8a81c941ae94ccfd1a00ac1e15d4cb6cce5
